@@ -1,0 +1,86 @@
+@media screen and (min-width: 769px) {
+  .mobile-nav,
+  .mobile-nav-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // Nav
+  .desktop-nav {
+    display: none;
+  }
+
+  button {
+    padding: 0 50px;
+  }
+
+  // Auth
+  .auth {
+    overflow: hidden;
+
+    &-wrapper,
+    .forgot-password__wrapper {
+      display: block;
+      overflow: hidden;
+      min-height: 100vh;
+
+      h3 {
+        font-size: 28px;
+        font-weight: 800;
+      }
+
+      &.register-view h3 {
+        margin-bottom: 10px;
+      }
+
+      &.login-view h3 {
+        margin-bottom: 10px;
+      }
+
+      &__form {
+        padding: 30px;
+        display: block;
+
+        button {
+          width: 100%;
+        }
+
+        > div {
+          padding: 20px 0;
+        }
+      }
+
+      &__img,
+      .forgot-password__img {
+        display: none;
+      }
+
+      .forgot-password__form {
+        padding: 30px;
+
+        img {
+          margin-bottom: 40px;
+        }
+
+        p {
+          font-size: 14px;
+          margin-bottom: 20px;
+          color: $dark-text;
+        }
+      }
+    }
+  }
+
+  // Settings
+  .settings-wrapper {
+    margin-top: 30px;
+  }
+
+  // Profile
+  .profile {
+    .cover-page {
+      margin-top: 30px;
+    }
+  }
+}

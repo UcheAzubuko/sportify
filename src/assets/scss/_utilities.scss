@@ -1,0 +1,163 @@
+// Container
+.container {
+  overflow: hidden;
+  max-width: $max-width;
+  margin: auto;
+  padding: 0 10px;
+}
+
+// Base Button
+.base-button {
+  text-align: center;
+}
+
+// Button
+.button {
+  height: 50px;
+  color: #fff;
+  letter-spacing: 0.7px;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 0 15px;
+  background: transparent;
+  transition: all 0.3s linear;
+  box-shadow: 5px 5px 10px #d8d8d8, -5px -5px 10px #f4f4f4;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button.-primary {
+  background: $primary-color;
+}
+
+.button:hover {
+  box-shadow: 0px 7px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+.button.-modal {
+  width: fit-content;
+  padding: 0 30px;
+  background: $primary-color;
+}
+
+.button:focus {
+  outline: none;
+}
+
+// Error Bar
+.error {
+  text-align: center;
+  background-color: rgb(248, 69, 69);
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+  transition: all 0.25s ease;
+  font-size: 12px;
+}
+
+// Caution Text - Pages Not Yet Built
+.caution {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+// Main Wrapper
+.main-wrapper {
+  background: rgba(246, 251, 255, 0.5);
+  min-height: 100vh;
+}
+
+// Base Modal
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 40px 30px;
+    background-color: #fff;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+
+// Spinner
+.spinner {
+  top: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    animation: spin ease 1000ms infinite;
+  }
+}
+
+// Logo Box
+.logo-box {
+  text-align: right;
+}
+
+img.logo-icon {
+  width: 30px;
+  display: inline-block;
+}
+
+// Progress Bar
+#nprogress .bar {
+  background: #2c16d0 !important;
+}
+
+// Transition
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
